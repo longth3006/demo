@@ -24,7 +24,7 @@ public class CustomerServiceImpl implements CustomerService{
         System.out.println(lstCust.size());
         Customer customer = ((lstCust == null ||lstCust.size()==0)?null:lstCust.get(0));
         CustomerModel customerModel = customer==null?null:modelMapper.map(customer, CustomerModel.class);
-
+        System.out.println("Toi test");
         return customerModel;
     }
 }
